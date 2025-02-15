@@ -1,13 +1,10 @@
 {
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "headers": {
+        "Content-Type": "text/javascript"
+      }
     }
   ]
 }
